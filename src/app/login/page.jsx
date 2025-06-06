@@ -12,8 +12,7 @@ const handleLogin =e=> {
     console.log(email,pass)
 }
 
-
-    return (
+return (
         <div className=" flex  items-center py-3 md:py-10 lg:py-32 justify-center bg-gray-100">
       <div className="lg:w-full lg:max-w-6xl flex flex-col-reverse lg:flex-row bg-white shadow-lg rounded-lg  overflow-hidden">
         
