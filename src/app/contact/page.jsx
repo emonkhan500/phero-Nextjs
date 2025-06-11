@@ -7,7 +7,7 @@ const page = () => {
             <h1>this is contact</h1>
 
 
-            <h1 className='text-center mt-20'>Wanna See More</h1>
+            <h1 className='mx text-center mt-20'>Wanna See More</h1>
 
             <div>
                <Link href='/contact/personal'> <li>Personal</li></Link>

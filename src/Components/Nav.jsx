@@ -30,10 +30,10 @@ router.push('/login')
 router.push('/signup')
   }
     return (
-        <div className="flex justify-around py-10 selection: bg-green-200" >
+        <div className="2xl: flex justify-around py-10 selection: bg-green-200" >
   <h1>Logo</h1>
 
-  <ul className="flex justify-around gap-5">
+  <ul className="flex justify-around gap-5 ">
    {
     links.map(link=><li ><Link href={link.path}>{link.title}</Link> </li>)
    }
