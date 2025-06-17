@@ -5,6 +5,7 @@ export async function GET(){
     
 }
 
+
 export async function POST(request){
     const newComment = request.json()
     comment.push(newComment)
