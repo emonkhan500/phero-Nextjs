@@ -24,7 +24,7 @@ const Nav = () => {
     
   ]
   const handleSignIn = ()=>{
-router.push('/login')
+router.push('/signin')
   }
   const handleSignUp = ()=>{
 router.push('/signup')
