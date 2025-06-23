@@ -1,4 +1,5 @@
 'use client'
+import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React from 'react';
@@ -6,6 +7,7 @@ import React from 'react';
 const Nav = () => {
   
   const router= useRouter()
+  const session =useSession()
   const links=[
     {
       title:'Home',
@@ -39,8 +41,15 @@ router.push('/signup')
    }
   </ul>
   <div className='space-x-3'>
-  <button onClick={handleSignIn}>SignIn</button>
-  <button onClick={handleSignUp}>SignUp</button>
+  {session ? (
+  <>
+    <button onClick={handleSignIn}>Sign In</button>
+    <button onClick={handleSignUp}>Sign Up</button>
+  </>
+) : (
+  <button >Logout</button>
+)}
+ 
   </div>
 </div>
     );
